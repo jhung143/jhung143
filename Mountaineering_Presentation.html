@@ -1,0 +1,39 @@
+// Create a new PowerPoint presentation
+const pptx = new PptxGenJS();
+
+// Slide 1: Title
+const slide1 = pptx.addSlide();
+slide1.addText("Exploring Mountaineering and Its Health Benefits", { x: 1, y: 1, w: "100%", h: 1, fontSize: 24, align: "center" });
+
+// Slide 2: Mountaineering Overview
+const slide2 = pptx.addSlide();
+slide2.addText("Mountaineering Overview", { x: 1, y: 1, w: "100%", h: 1, fontSize: 20 });
+slide2.addText("George Leigh Mallory's quote: 'Because it's there.'\nDefinition of mountaineering: Ascending hills or mountains with technical equipment.\nRecognition of mountaineering in the Philippines.", { x: 1, y: 1.5, w: "100%", h: 4, fontSize: 12 });
+
+// Slide 3: Health Benefits of Mountaineering
+const slide3 = pptx.addSlide();
+slide3.addText("Health Benefits of Mountaineering", { x: 1, y: 1, w: "100%", h: 1, fontSize: 20 });
+slide3.addText("Physical, mental, and spiritual improvements.\nBoosts confidence, teamwork, physical fitness, and cardiovascular health.\nStrengthens bones and fosters character development.", { x: 1, y: 1.5, w: "100%", h: 4, fontSize: 12 });
+
+// Slide 4: Mountaineering Activities
+const slide4 = pptx.addSlide();
+slide4.addText("Mountaineering Activities", { x: 1, y: 1, w: "100%", h: 1, fontSize: 20 });
+slide4.addText("Subheading: Exploring Different Activities", { x: 1, y: 1.5, w: "100%", h: 1, fontSize: 16 });
+slide4.addText("Hiking & Trekking\nDifferences between hiking and trekking.\nRequired equipment and physical challenges.\nHealth benefits: Cardiovascular fitness and mental well-being.", { x: 1, y: 2, w: "100%", h: 3, fontSize: 12 });
+slide4.addText("Camping\nDefinition and historical perspective.\nBenefits: Fresh air, stress reduction, and socialization.", { x: 1, y: 5, w: "100%", h: 3, fontSize: 12 });
+slide4.addText("Orienteering\nCompetitive sport emphasizing map-reading and direction-finding.\nBenefits: Self-reliance and increased fitness.", { x: 1, y: 8, w: "100%", h: 3, fontSize: 12 });
+
+// Slide 5: Health Benefits of Activities
+const slide5 = pptx.addSlide();
+slide5.addText("Health Benefits of Activities", { x: 1, y: 1, w: "100%", h: 1, fontSize: 20 });
+slide5.addText("Subheading: Reaping the Health Rewards", { x: 1, y: 1.5, w: "100%", h: 1, fontSize: 16 });
+slide5.addText("Lower risk of heart disease, improved mental health, increased fitness levels, and socialization.\nEnhanced decision-making skills, self-esteem, and enjoyment of nature.", { x: 1, y: 2, w: "100%", h: 3, fontSize: 12 });
+
+// Slide 6: Conclusion
+const slide6 = pptx.addSlide();
+slide6.addText("Conclusion", { x: 1, y: 1, w: "100%", h: 1, fontSize: 20 });
+slide6.addText("Subheading: Embrace Mountaineering for a Healthier Lifestyle", { x: 1, y: 1.5, w: "100%", h: 1, fontSize: 16 });
+slide6.addText("Encourage audience to explore mountaineering activities for physical and mental well-being.", { x: 1, y: 2, w: "100%", h: 3, fontSize: 12 });
+
+// Download the PowerPoint presentation
+pptx.writeFile({ fileName: "Mountaineering_Presentation" });
